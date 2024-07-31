@@ -1,0 +1,54 @@
+body{
+    font-family: Inconsolata;
+}
+.form{
+    width: 50vw;
+    height: 55vh;
+    
+    font-size: 2vw;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+    margin: auto;
+
+    background-image: url("https://www.nyip.edu/media/zoo/images/stop-taking-blurry-pictures_89361f2a136cd1ae81bb54636ed2ee72.jpg");
+    background-size: 100%;
+    padding: 3vw;
+
+    box-sizing: border-box;  
+    
+    background-origin:border-box;  
+    border-radius: 20px;
+    border: 3px solid #555    
+}
+.submit{
+    padding-top: 15%;
+    text-align: center;
+    box-sizing: border-box;
+    width: 50%;
+    margin: auto;
+    
+}
+.data{    
+    box-sizing: border-box;
+    max-width: 100%;
+    
+}
+input{
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 20px;
+    font-size: 1.75vw;
+    width: 100%;
+    
+}
+fieldset{
+    box-sizing: border-box;
+    width: 100%;
+}
+.submit:hover{
+    color: #f5eaea;
+}

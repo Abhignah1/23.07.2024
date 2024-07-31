@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <script>
+        function validate(){
+            var name = document.myform.name.value;
+            var password = document.myform.password.value;
+            if(name == null || name == ""){
+                alert("Name cant be blank.");
+                return false;
+            }
+            else if(password.length<6){
+                alert("Password must be atleast 6 characters.");
+                return false;
+            }
+        }
+    </script>
+    <div class="form">
+        <form action="validate.html" name="myform" method="post" onsubmit="return validate()">
+            <fieldset>
+                <div class="data">
+                    <div class="d1">Username: <input type="text" name="name" placeholder=""><br><br></div>
+                    <div class="d2">Password: <input type="password" name="password"><br></div>
+                </div>
+                <div class="submit"><input type="submit" value="Register"></div>
+            </fieldset>            
+        </form>
+    </div>
+</body>
+</html>
